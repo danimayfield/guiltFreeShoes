@@ -1,0 +1,15 @@
+@import "setup";
+@import "colors";
+
+
+html {
+  font-family: 'Source Code Pro', monospace;
+}
+
+img {
+  width: 400px;
+}
+
+button {
+  background-color: $basePink;
+}
