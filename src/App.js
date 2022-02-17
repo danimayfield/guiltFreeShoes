@@ -2,15 +2,17 @@ import Nav from "./components/Nav";
 import Carousel from "./components/Carousel";
 
 const App = () => {
-
   return (
-    <div>
-      <Nav/>
-      <section>
-        <h1>Welcome to Guilt Free Shopping</h1>
+    <div className="wrapper">
+      <Nav />
+      <main>
+        <h1>Welcome to</h1>
+        <h1>Guilt-Free Shopping</h1>
         <Carousel />
-        <button>Start Shopping</button>
-      </section>
+        <div className="buttonContainer">
+          <button>START SHOPPING</button>
+        </div>
+      </main>
     </div>
   );
 };

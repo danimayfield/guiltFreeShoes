@@ -1,0 +1,51 @@
+@import "~slick-carousel/slick/slick.css"; 
+@import "~slick-carousel/slick/slick-theme.css";
+
+.carousel {
+    width: 190%;
+    margin-left: -45%;
+}
+
+.slide img {
+    width: 100%;
+    height: 360px;
+    margin: 2rem auto;
+    border-radius: 5px;
+}
+
+.slide {
+    transform: scale(0.75);
+    transition: transform 300ms;
+    opacity: 0.8;
+}
+
+.activeSlide {
+    transform: scale(1.0);
+    opacity: 1;
+}
+
+@media screen and (max-height: 680px ) {
+    .carousel {
+        width: 170%;
+        margin-left: -35%;
+    }
+
+    .slide img {
+        height: 320px;
+    }
+}
+
+@media screen and (max-height: 570px) {
+    .carousel {
+        width: 120%;
+        margin-left: -10%;
+    }
+
+    .slide img {
+        height: 220px;
+    }
+}
+
+
+
+/* width of 414 is highest found */
