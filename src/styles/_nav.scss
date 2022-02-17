@@ -1,139 +1,161 @@
 img {
-    width: 400px;
-  }
-  
-  nav {
+  width: 400px;
+}
+
+nav {
+  position: absolute;
+  z-index: 10;
+  background-color: rgb(252, 252, 252);
+  padding: 0.5rem;
+}
+
+.imgContainer {
+  position: relative;
+  img {
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    box-shadow: -88px -88px 0px -40px rgb(152, 228, 247);
+    -webkit-box-shadow: -88px -88px 0px -40px rgb(152, 228, 247);
     position: absolute;
-    z-index: 10;
-    background-color: rgb(252, 252, 252);
-    padding: 0.5rem;
+    left: 50vw;
+    top: 5vh;
+    z-index: 11;
   }
-  
-  .imgContainer {
-    position: relative;
-    img {
-      border-radius: 10px;
-      -webkit-border-radius: 10px;
-      box-shadow: -88px -88px 0px -40px rgb(152, 228, 247);
-      -webkit-box-shadow: -88px -88px 0px -40px rgb(152, 228, 247);
-      position: absolute;
-      left: 50vw;
-      top: 5vh;
-      z-index: 11;
-    }
+}
+
+form {
+  position: relative;
+  z-index: 12;
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 60vh;
+  padding-top: 5rem;
+
+  @media screen and (max-height: 630px) {
+    padding-top: 3rem;
   }
-  
-  form {
-    position: relative;
-    z-index: 12;
-    display: flex;
-    flex-direction: column;
-    width: 100vw;
-    height: 60vh;
-    padding-top: 5rem;
-  
-    @media screen and (max-height: 630px) {
-      padding-top: 3rem;
-    }
-  
-    input {
-      display: block;
-      padding: 1.4rem;
-      margin: 0.5rem auto;
-      border-radius: 5px;
-      border: none;
-      color: black;
-      font-weight: 900;
-      font-size: 1.2rem;
-      width: 70%;
-    }
-  
-    .pass {
-      width: 100%;
-    }
-    .inputContainer {
-      width: 70%;
-      position: relative;
-      margin: 0 auto;
-    }
-    .submit {
-      background-color: $basePink;
-      color: white;
-      font-weight: 900;
-      font-size: 1.3rem;
-      padding: 1.2rem;
-      cursor: pointer;
-      box-shadow: 9px 12px 35px 4px rgba(216, 131, 166, 0.56);
-      -webkit-box-shadow: 9px 12px 35px 4px rgba(216, 131, 166, 0.56);
-    }
-    .forgot {
-      position: absolute;
-      right: 5vw;
-      top: 40%;
-      text-decoration: none;
-      font-size: 1.2rem;
-      font-weight: 900;
-      color: rgb(177, 177, 177);
-    }
-  }
-  
-  .buttonContainer2 {
-    position: relative;
-    z-index: 12;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: -10vh;
-    margin-bottom: 20vh;
-    @media screen and (max-height: 570px) {
-      margin-top: -5vh;
-    }
-  
-  }
-  
-  .button {
-    display: flex;
-    align-items: flex-end;
-    width: 70%;
+
+  input {
+    display: block;
+    padding: 1.4rem;
+    margin: 0.5rem auto;
     border-radius: 5px;
-    margin: 0.5rem;
-    padding: 1.2rem;
+    border: none;
+    color: black;
+    font-weight: 900;
+    font-size: 1.2rem;
+    width: 70%;
+  }
+
+  .pass {
+    width: 100%;
+  }
+  .inputContainer {
+    width: 70%;
+    position: relative;
+    margin: 0 auto;
+  }
+  .submit {
+    background-color: $basePink;
     color: white;
+    font-weight: 900;
+    font-size: 1.3rem;
+    padding: 1.2rem;
     cursor: pointer;
-    i {
-      color: white;
-      font-size: 1.4rem;
-      padding-right: 0.6rem;
-    }
-    P {
-      width: 100%;
-      text-align: center;
-      font-size: 1.4rem;
-      margin: 0;
-    }
+    box-shadow: 9px 12px 35px 4px rgba(216, 131, 166, 0.56);
+    -webkit-box-shadow: 9px 12px 35px 4px rgba(216, 131, 166, 0.56);
+    transition: all 0.5s ease;
   }
-  .fb {
-    background-color: rgb(66, 103, 178);
-    box-shadow: 3px 40px 70px 17px rgba(79, 79, 79, 0.3);
+  .submit:hover {
+    box-shadow: 5px 5px 20px 2px rgba(243, 148, 187, 0.56);
+    -webkit-box-shadow: 5px 5px 20px 2px rgba(243, 148, 187, 0.56);
+    text-shadow: 0 -1px 5px white;
   }
-  .tw {
-    background-color: rgb(29, 161, 242);
-    box-shadow: 3px 40px 70px 17px rgba(79, 79, 79, 0.3);
-  }
-  
-  i {
-    font-size: 3rem;
+  .forgot {
+    position: absolute;
+    right: 5vw;
+    top: 40%;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 900;
     color: rgb(177, 177, 177);
   }
-  
-  .visuallyHidden {
-    border: 0;
-    clip: rect(0 0 0 0);
-    height: 1px;
-    margin: -1px;
-    overflow: hidden;
-    padding: 0;
-    position: absolute;
-    width: 1px;
+}
+
+.buttonContainer2 {
+  position: relative;
+  z-index: 12;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: -10vh;
+  margin-bottom: 20vh;
+  @media screen and (max-height: 570px) {
+    margin-top: -5vh;
   }
-  
+}
+
+.button {
+  display: flex;
+  align-items: flex-end;
+  width: 70%;
+  border-radius: 5px;
+  margin: 0.5rem;
+  padding: 1.2rem;
+  color: white;
+  cursor: pointer;
+  i {
+    color: white;
+    font-size: 1.4rem;
+    padding-right: 0.6rem;
+  }
+  P {
+    width: 100%;
+    text-align: center;
+    font-size: 1.3rem;
+    margin: 0;
+  }
+}
+
+.fb {
+  background-color: rgb(66, 103, 178);
+  box-shadow: 3px 40px 70px 17px rgba(79, 79, 79, 0.3);
+  -webkit-box-shadow: 3px 20px 50px 10px rgba(79, 79, 79, 0.3);
+  transition: all 0.5s ease;
+}
+.tw {
+  background-color: rgb(29, 161, 242);
+  box-shadow: 3px 40px 70px 17px rgba(79, 79, 79, 0.3);
+  -webkit-box-shadow: 3px 20px 50px 10px rgba(79, 79, 79, 0.3);
+  transition: all 0.5s ease;
+}
+
+.fb:hover {
+    box-shadow: 3px 20px 50px 10px rgba(79, 79, 79, 0.3);
+    -webkit-box-shadow: 3px 20px 50px 10px rgba(79, 79, 79, 0.3);
+    text-shadow: 0 -1px 5px white;
+}
+
+.tw:hover{
+    box-shadow: 3px 20px 50px 10px rgba(79, 79, 79, 0.3);
+    -webkit-box-shadow: 3px 20px 50px 10px rgba(79, 79, 79, 0.3);
+    text-shadow: 0 -1px 5px white;
+}
+
+i {
+  font-size: 3rem;
+  color: rgb(177, 177, 177);
+  cursor: pointer;
+}
+
+.visuallyHidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}

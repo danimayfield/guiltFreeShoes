@@ -45,5 +45,12 @@ button {
   cursor: pointer;
   box-shadow: 9px 12px 35px 4px rgba(216, 131, 166, 0.56);
   -webkit-box-shadow: 9px 12px 35px 4px rgba(216, 131, 166, 0.56);
+  transition: all 0.5s ease;
+}
+
+button:hover {
+  box-shadow: 5px 5px 20px 2px rgba(243, 148, 187, 0.56);
+  -webkit-box-shadow: 5px 5px 20px 2px rgba(243, 148, 187, 0.56);
+  text-shadow: 0 -1px 5px white;
 }
 
