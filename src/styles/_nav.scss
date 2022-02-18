@@ -46,6 +46,11 @@ form {
     font-weight: 900;
     font-size: 1.2rem;
     width: 70%;
+    transition: box-shadow 0.5s ease;
+  }
+  input:focus {
+    border: $basePink 4px solid;
+    box-shadow: 9px 12px 35px 0px rgba(216, 131, 166, 0.37);
   }
 
   .pass {
@@ -137,10 +142,18 @@ form {
     text-shadow: 0 -1px 5px white;
 }
 
+.fb:active {
+  transform: scale(0.9);
+}
+
 .tw:hover{
     box-shadow: 3px 20px 50px 10px rgba(79, 79, 79, 0.3);
     -webkit-box-shadow: 3px 20px 50px 10px rgba(79, 79, 79, 0.3);
     text-shadow: 0 -1px 5px white;
+}
+
+.tw:active{
+  transform: scale(0.9);
 }
 
 i {
